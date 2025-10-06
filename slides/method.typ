@@ -56,15 +56,26 @@
 
 *Remember:* Ciphertext is now a Recurrent Integer Sequence
 
-*CausalLM*
-- From left to right - can only look back
-- Past words affect predicted words - (sort of like autocorrect)
+*This makes every cipher comparable*
 
 *Dataset made by authors*
 - 2 million unique homophonic substitution ciphers
-- Including corresponding plaintexts
-- Modern English
+- Including their corresponding plaintexts
+- Uses Modern English
+
 
 ---
 
-test
+*CausalLM*
+- Reads from  left to right - can only look back
+- Past words affect predicted words - (sort of like autocorrect)
+
+$ pause [X^l,Y^l] = "FFN" compose "SelfAtn"([X^(l-1),Y^(l-1)], "Mask") $
+
+- $X^(l-1) arrow.r "Cipher at layer previous to" l$
+- $Y^(l-1) arrow.r "Text at layer previous to" l$
+- $"SelfAtn" arrow.r "Captures positions related to previous symbols/letters"$
+- $"Mask" arrow.r "The attention mask used by SelfAtn"$
+- $"FFN" arrow.r "Result is fed to Feed-Forward Neural Network" X$
+
+#pause *Above produces the representation at $[X^l, Y^l]$*
