@@ -79,3 +79,20 @@ $ pause [X^l,Y^l] = "FFN" compose "SelfAtn"([X^(l-1),Y^(l-1)], "Mask") $
 - $"FFN" arrow.r "Result is fed to Feed-Forward Neural Network" X$
 
 #pause *Above produces the representation at $[X^l, Y^l]$*
+
+*Remember:* CausalLM only looks back!
+
+---
+
+*Loss function*
+
+$ L^("CLM")(X,Y) = L^("SRC") + L^("TGT") = -"logP"(X) - "logP"(Y|X) $
+
+- $L^("SRC") arrow.r "Source loss - error predicting cipher seq"$
+- $L^("TGT") arrow.r "Target loss - error predicting plaintext seq"$
+- $-"logP"(X) arrow.r "Probability of reproducing correct cipher symbols"$
+- $-"logP"(X|Y) arrow.r "Probability of predicting plaintext given cipher"$
+
+#pause *Low probability = high loss, and vice versa*
+
+#pause Probability can be seen as confidence
