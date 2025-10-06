@@ -1,7 +1,4 @@
-#import "@preview/touying:0.6.1": *
-#import themes.metropolis: *
-
-#import "@preview/numbly:0.1.0": numbly
+#import "/globals.typ": *
 
 #show: metropolis-theme.with(
   aspect-ratio: "16-9",
@@ -14,11 +11,10 @@
     institution: [Findings of the Association for Computational Linguistics: EACL 2023],
   ),
 )
-
 #set heading(numbering: numbly("{1}.", default: "1.1"))
-
 #title-slide(extra: [_Presented by Morten Munk Andersen_])
 
 // Table of contents
 #include "slides/toc.typ"
 #include "slides/intro.typ"
+#include "slides/method.typ"
