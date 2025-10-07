@@ -95,4 +95,37 @@ $ L^("CLM")(X,Y) = L^("SRC") + L^("TGT") = -"logP"(X) - "logP"(Y|X) $
 
 #pause *Low probability = high loss, and vice versa*
 
-#pause Probability can be seen as confidence
+Probability can be seen as confidence
+
+---
+
+
+#grid(
+  columns: 2,
+  column-gutter: 1em,
+  [
+    *Why CausalLM?*
+    - Predict the cipher symbols in a sequence
+    - Predict plaintext in the sequence
+    - Model learns the mappings
+  ],
+  [
+    #align(center)[
+      #image("/images/causal.png", width: 80%)
+    ]
+  ],
+)
+
+---
+
+*Considered models*
+
+- Seq2seq
+- Target-Only CausalLM
+- PrefixLM
+
+*Why are they weaker?*
+- Only predicts plaintext
+- Does not learn cipher symbol recurrence patterns
+
+
