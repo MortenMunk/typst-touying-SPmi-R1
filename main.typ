@@ -18,3 +18,4 @@
 #include "slides/toc.typ"
 #include "slides/intro.typ"
 #include "slides/method.typ"
+#include "slides/result.typ"
