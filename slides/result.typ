@@ -87,4 +87,37 @@
 
 ---
 
+== Historical Ciphers
 
+*What about historical ciphers?*
+
+*TNA_SP106/5*
+- 1624, UK
+- Homophonic substitution
+- 171 characters
+- 47 symbols to 27 letters
+- Not many reccurences (3.6 avg)
+
+#pause
+*The homophonic 40-65 key model*
+- They used beam size 1000
+- Achieved 18% SER
+
+#pause
+*Remember:* This is a hard cipher in an out-of-domain language
+
+---
+
+*BnF_fr2988_f01*
+- 1524-1549, Italy
+- Homophonic substitution
+- 2 pages long
+- 35 symbols
+- More reccurences but older language
+
+#pause
+*The homophonic 30-45 key model*
+- Achieved 1.13% SER
+
+#pause
+*Remember:* This is a much older and odd version of English, which it has not trained on!
