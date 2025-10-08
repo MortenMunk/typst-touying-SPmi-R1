@@ -19,3 +19,5 @@
 #include "slides/intro.typ"
 #include "slides/method.typ"
 #include "slides/result.typ"
+#include "slides/contrib.typ"
+#include "slides/limit.typ"
