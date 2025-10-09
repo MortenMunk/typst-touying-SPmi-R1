@@ -207,7 +207,7 @@ Notice how words are different in old English!
     - Not too good
 
     But in real life...
-    - Domain expert evaluate output
+    - Domain expert evaluates output
     - If they correct 3 words manually:
       - SER 3.89%
       - Pretty good!
