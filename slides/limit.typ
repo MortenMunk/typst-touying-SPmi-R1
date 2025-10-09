@@ -2,7 +2,7 @@
 
 = Limitations
 
-== Limitations
+---
 
 *Cipher Sizes*
 - Not superior for shorter ciphers \<128 with less frequencies
@@ -16,6 +16,8 @@
 - Authors use 3 different datasets + ciphers
 - Hard to keep track of which and when?
 
+They did not compare with AZDecrypt
 
 #pause *What happens with transpositioned ciphers like Z340? #emoji.face.devil.smile*
+
 

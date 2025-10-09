@@ -2,7 +2,8 @@
 
 = Contributions
 
-== Contributions
+---
+
 
 *1. The Seq2seq dataset*
 

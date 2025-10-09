@@ -21,3 +21,4 @@
 #include "slides/result.typ"
 #include "slides/contrib.typ"
 #include "slides/limit.typ"
+#include "slides/relevance.typ"

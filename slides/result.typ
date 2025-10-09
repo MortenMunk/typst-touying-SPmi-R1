@@ -4,7 +4,7 @@
 
 ---
 
-== Synthetic Cipher
+== Synthetic Ciphers
 
 
 #grid(
